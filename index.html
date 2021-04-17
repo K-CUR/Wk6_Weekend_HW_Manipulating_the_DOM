@@ -11,38 +11,38 @@
     <title>Crufts Champs</title>
 </head>
 <body>
+<section class='full-width-colour' >
     <h1>Crufts Champs</h1>
+    <h2>Enter a champ to add to the list</h2>
 
     <form id="new-champ-form">
-        <!-- changed action="" to id for the form -->
-        <div class = "form_fields">
-            <label for="year">Year won</label>
-            <input type="text" id ="year" required>
-        </div>
-        <div class = "form_fields">
-            <label for="breed">Breed</label>
-            <input type="text" id ="breed" required>
-        </div>
-        <div class = "form_fields">
-            <label for="registered_name">Registered name</label>
-            <input type="text" id ="registered_name" required>
-        </div>
-        <div class = "form_fields">
-            <label for="aka">Known as</label>
-            <input type="text" id ="aka" required>
-        </div>
-        <div class = "form_fields">
-            <label for="owner">Owner/s</label>
-            <input type="text" id ="owner" required>
-        </div>
+        <!-- <div> -->
 
-        <button type="submit">Add to the champ list</button>
+            <div class = "form_fields">
+                <label for="year"> <span>Year won</span> <input type="text" id ="year" required> </label>   
+            </div>
+            <div class = "form_fields">
+                <label for="breed"> <span>Breed</span> <input type="text" id ="breed" class = "input-wide" required> </label> 
+            </div>
+            <div class = "form_fields">
+                <label for="registered_name"> <span>Registered name</span> <input type="text" id ="registered_name"  class = "input-wide" required> </label>
+            </div>
+            <div class = "form_fields">
+                <label for="aka"> <span>Known as</span> <input type="text" id ="aka"  class = "input-wide" required> </label>
+            </div>
+            <div class = "form_fields">
+                <label for="owner"> <span>Owner/s</span> <input type="text" id ="owner"  class = "input-wide" required> </label>
+            </div>
+
+        <!-- </div> -->
+        <button type="submit">Add</button>
 
         <!-- <input type="submit"> -->
         <!-- do I need value="save"?? -->
     </form>
-    
-    <section>
+</section>
+
+<section>
         <h2>Previous Champs</h2>
 
         <ul id="champ-list">
@@ -83,7 +83,7 @@
             </li>
 
         </ul>   
-    </section>
+</section>
 
     <button id="delete">Delete list</button>
     
