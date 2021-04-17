@@ -10,3 +10,19 @@ td, th{
     border: solid 1px black;
 }
 
+ul {
+    border: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex-direction:row;
+}
+
+ul > li {
+    list-style: none;
+    border: 3px solid green;
+    border-radius: 10px; 
+    /* padding: 40px; */
+    margin: 20px;
+    flex: 20%
+}
