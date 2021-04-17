@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- connecting to CSS file-->
+    <script src="js/app.js"></script>
+    <!-- connecting to JavaScript file -->
+    <title>Crufts Champs</title>
+</head>
+<body>
+    <h1>Crufts Champs</h1>
+
+    <form id="new-champ-form">
+        <!-- changed action="" to id for the form -->
+        <div>
+            <label for="year">Year won</label>
+            <input type="text" id ="year" required>
+        </div>
+        <div>
+            <label for="breed">Breed</label>
+            <input type="text" id ="breed" required>
+        </div>
+        <div>
+            <label for="registered_name">Registered name</label>
+            <input type="text" id ="registered_name" required>
+        </div>
+        <div>
+            <label for="aka">Known as</label>
+            <input type="text" id ="aka" required>
+        </div>
+        <div>
+            <label for="owner">Owner/s</label>
+            <input type="text" id ="owner" required>
+        </div>
+
+        <button type="submit">Add to the champ list</button>
+
+        <!-- <input type="submit"> -->
+        <!-- do I need value="save"?? -->
+    </form>
+    
+    <section>
+        <h2>Previous Champs</h2>
+
+        <ul id="champ-list"> </ul>   
+    </section>
+
+    <button id="delete">Delete list</button>
+    
+</body>
+</html>

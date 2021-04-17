@@ -1,0 +1,12 @@
+.champ_table{
+    border-style: double;
+    border-collapse: collapse;
+    /* table-layout: auto; */
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+}
+
+td, th{
+    border: solid 1px black;
+}
+
