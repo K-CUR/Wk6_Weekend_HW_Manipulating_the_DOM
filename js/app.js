@@ -37,25 +37,26 @@ document.addEventListener('DOMContentLoaded', () => {
     //append it to the champList
 
         const newChampItem = document.createElement('li');
+        newChampItem.classList.add("restrict");
 
         const addYear = document.createElement('h1');
         addYear.textContent = form.year.value;
         newChampItem.appendChild(addYear);
 
         const addBreed = document.createElement('p');
-        addBreed.textContent = form.breed.value;
+        addBreed.textContent = "Breed: " + form.breed.value;
         newChampItem.appendChild(addBreed);
 
         const addRegisteredName = document.createElement('p');
-        addRegisteredName.textContent = form.registered_name.value
+        addRegisteredName.textContent = "Registered name: " + form.registered_name.value;
         newChampItem.appendChild(addRegisteredName);
 
         const addKnownAs = document.createElement('p');
-        addKnownAs.textContent = form.aka.value;
+        addKnownAs.textContent = "Known as: " + form.aka.value;
         newChampItem.appendChild(addKnownAs);
 
         const addOwner = document.createElement('p');
-        addOwner.textContent = form.owner.value;
+        addOwner.textContent = "Owner/s: " + form.owner.value;
         newChampItem.appendChild(addOwner);
 
         return newChampItem;

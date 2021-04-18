@@ -14,46 +14,56 @@ h2{
     padding: 0px 00px 20px 20px;
 }
 
-label{
-    display: block;
+h3{
+    font-size: 40px;
+
 }
 
-span{
-    display: inline-block;
-    text-align: right;
-    width: 150px;
-    padding: 0px 20px 0px 0px;
-    word-break: keep-all;
-    white-space:nowrap;
-    margin-left: 20px;
+/* ................. */
+
+form {
+    display: grid;
+    /* divide that grid using... */
+    grid-template-columns: 200px 0.3fr;
+    /* the first column will have a fixed width of 200px 
+    whilst the second will take 0.3fr (“0.3 of a fraction”) 
+    of the remaining available space. */
+    grid-gap: 16px;
+
 }
 
-.input-wide{
-    width: 250px;
-    }
+/* now need to define the placement for our labels and inputs. 
+To do that, we will use grid-column with specific values for 
+the grid lines: */
 
-.form_fields{
-    margin: 10px;
-    }
-    
+label {
+    grid-column: 1 / 2;
+    text-align:right;
+    margin-top: 6px;
+}
 
+input{
+height: 20px;
+}
 
-.full-width-colour {
-    background-color:rgba(109, 107, 110, 0.4);
-    /* margin: 0 -9999rem; */
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 10px;
+input,
+button {
+    grid-column: 2 / 3;
+}
 
-    }
+/* label, input {
+    vertical-align:0cm;
+} */
+
+/* ................ */
 
 button {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 5px 30px;
+    margin: 5px 110px;
     background-color:rgba(119,191,63,0.8);
     border: rgba(119,191,63,0.5);
     border-radius: 5px;
-    padding: 8px 20px 8px 20px;
+    padding: 8px 10px 8px 10px;
     
 }
 
@@ -62,6 +72,8 @@ button:hover{
     font-weight: 600;
     transition: .2s ease-in-out;
 }
+
+/* ............ */
 
 ul {
     border: 5px;
@@ -75,18 +87,32 @@ ul > li {
     list-style: none;
     border: 3px solid green;
     border-radius: 10px; 
-    /* padding: 40px; */
     margin: 20px;
-    flex: 20%
+    flex: 20%;
+    padding: 0px 00px 20px 20px;
 }
+
+.restrict {
+    flex: 1 0 20%;
+    max-width: 20%;
+     }
+
 .champ_table{
     border-style: double;
     border-collapse: collapse;
-    /* table-layout: auto; */
+    table-layout: auto;
     width: 100%;
     margin: 20px 0px 30px 0px;
 }
 
+/* ............... */
+
+.full-width-colour {
+    background-color:rgba(109, 107, 110, 0.4);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px;
+    }
 
 
 
